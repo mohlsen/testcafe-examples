@@ -1,4 +1,4 @@
-# Testcafe timeout issue
+# Testcafe never timing out
 
 There seems to be a condition when code under test throws an unhandled exception or if a async function never completes, testcafe will just hang forever, 
 and does not respect any timeout flags.
@@ -11,6 +11,8 @@ test('test something', async t => {
   await new Promise(() => { }); 
 });
 ```
+
+Maybe this is not an issue per se, but is just a new feature request?
 
 For this example test, run the following:
 `npx testcafe chrome examples/unhandled-exception-promise`
