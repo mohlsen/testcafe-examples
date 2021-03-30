@@ -12,7 +12,7 @@ test('test something', async t => {
 });
 ```
 
-Maybe this is not an issue per se, but is just a new feature request?
+Maybe this is not an issue per se, but is just a new feature request for a test or fixture timeout flag?
 
 For this example test, run the following:
 `npx testcafe chrome examples/unhandled-exception-promise`
